@@ -1,95 +1,214 @@
-# ─── Cloudflare Pages URL Rewrites ───────────────────────────────────────────
-# Maps clean URLs → actual HTML files (200 = serve file, keep URL unchanged)
+# Cloudflare Pages - /pages/... → clean URL (301 redirects)
 
-# Core pages
-/contact                                                            /pages/Contact.html                                                                  200
+/pages/Contact.html /contact 301
+/pages/Contact /contact 301
 
-# Platforms
-/platforms/aioniq                                                   /pages/Platforms/AIONIQ.html                                                         200
-/platforms/vector                                                   /pages/Vector/Overview.html                                                          200
-/platforms/vector-platform                                          /pages/Vector/Platform.html                                                          200
-/platforms/vector-integrations                                      /pages/Vector/Integration.html                                                       200
+/pages/Platforms/AIONIQ.html /platforms/aioniq 301
+/pages/Platforms/AIONIQ /platforms/aioniq 301
+/pages/Vector/Overview.html /platforms/vector 301
+/pages/Vector/Overview /platforms/vector 301
+/pages/Vector/Platform.html /platforms/vector-platform 301
+/pages/Vector/Platform /platforms/vector-platform 301
+/pages/Vector/Integration.html /platforms/vector-integrations 301
+/pages/Vector/Integration /platforms/vector-integrations 301
 
-# Solutions
-/solutions/agentic-ai                                               /pages/Solutions/AgenticAI.html                                                      200
-/solutions/applications                                             /pages/Solutions/Applications.html                                                   200
-/solutions/data                                                     /pages/Solutions/Data.html                                                           200
-/solutions/cloud                                                    /pages/Solutions/Cloud.html                                                          200
+/pages/Solutions/AgenticAI.html /solutions/agentic-ai 301
+/pages/Solutions/AgenticAI /solutions/agentic-ai 301
+/pages/Solutions/Applications.html /solutions/applications 301
+/pages/Solutions/Applications /solutions/applications 301
+/pages/Solutions/Data.html /solutions/data 301
+/pages/Solutions/Data /solutions/data 301
+/pages/Solutions/Cloud.html /solutions/cloud 301
+/pages/Solutions/Cloud /solutions/cloud 301
 
-# Solutions Case Studies
-/solutions/case-studies/unlocking-growth-user-adoption             /pages/Solutions/case-studies/unlocking-growth-user-adoption.html                    200
-/solutions/case-studies/operational-excellence-cloud               /pages/Solutions/case-studies/operational-excellence-cloud.html                      200
-/solutions/case-studies/cost-efficiency-cloud                      /pages/Solutions/case-studies/cost-efficiency-cloud.html                             200
-/solutions/case-studies/elevating-database-performance             /pages/Solutions/case-studies/elevating-database-performance.html                    200
-/solutions/case-studies/data-driven-bi                             /pages/Solutions/case-studies/data-driven-bi.html                                    200
-/solutions/case-studies/strategic-insight-cloud                    /pages/Solutions/case-studies/strategic-insight-cloud.html                           200
+/pages/Solutions/case-studies/unlocking-growth-user-adoption.html /solutions/case-studies/unlocking-growth-user-adoption 301
+/pages/Solutions/case-studies/unlocking-growth-user-adoption /solutions/case-studies/unlocking-growth-user-adoption 301
+/pages/Solutions/case-studies/operational-excellence-cloud.html /solutions/case-studies/operational-excellence-cloud 301
+/pages/Solutions/case-studies/operational-excellence-cloud /solutions/case-studies/operational-excellence-cloud 301
+/pages/Solutions/case-studies/cost-efficiency-cloud.html /solutions/case-studies/cost-efficiency-cloud 301
+/pages/Solutions/case-studies/cost-efficiency-cloud /solutions/case-studies/cost-efficiency-cloud 301
+/pages/Solutions/case-studies/elevating-database-performance.html /solutions/case-studies/elevating-database-performance 301
+/pages/Solutions/case-studies/elevating-database-performance /solutions/case-studies/elevating-database-performance 301
+/pages/Solutions/case-studies/data-driven-bi.html /solutions/case-studies/data-driven-bi 301
+/pages/Solutions/case-studies/data-driven-bi /solutions/case-studies/data-driven-bi 301
+/pages/Solutions/case-studies/strategic-insight-cloud.html /solutions/case-studies/strategic-insight-cloud 301
+/pages/Solutions/case-studies/strategic-insight-cloud /solutions/case-studies/strategic-insight-cloud 301
 
-# GCC
-/gcc/overview                                                       /pages/GCC/Overview.html                                                             200
-/gcc/managed-service                                                /pages/GCC/ManagedService.html                                                       200
-/gcc/pay-as-you-go                                                  /pages/GCC/PayAsYouGo.html                                                           200
-/gcc/build-operate-transfer                                         /pages/GCC/BuildOperateTransfer.html                                                 200
-/gcc/thought-leadership                                             /pages/GCC/ThoughtLeadership.html                                                    200
+/pages/GCC/Overview.html /gcc/overview 301
+/pages/GCC/Overview /gcc/overview 301
+/pages/GCC/ManagedService.html /gcc/managed-service 301
+/pages/GCC/ManagedService /gcc/managed-service 301
+/pages/GCC/PayAsYouGo.html /gcc/pay-as-you-go 301
+/pages/GCC/PayAsYouGo /gcc/pay-as-you-go 301
+/pages/GCC/BuildOperateTransfer.html /gcc/build-operate-transfer 301
+/pages/GCC/BuildOperateTransfer /gcc/build-operate-transfer 301
+/pages/GCC/ThoughtLeadership.html /gcc/thought-leadership 301
+/pages/GCC/ThoughtLeadership /gcc/thought-leadership 301
 
-# GCC Blogs
-/gcc/blogs/BuildingForIntelligence                                  /pages/GCC/GccBlogs/BuildingForIntelligence.html                                     200
-/gcc/blogs/WhyEnterpriseAIStruggles                                 /pages/GCC/GccBlogs/WhyEnterpriseAIStruggles.html                                    200
+/pages/GCC/GccBlogs/BuildingForIntelligence.html /gcc/blogs/BuildingForIntelligence 301
+/pages/GCC/GccBlogs/BuildingForIntelligence /gcc/blogs/BuildingForIntelligence 301
+/pages/GCC/GccBlogs/WhyEnterpriseAIStruggles.html /gcc/blogs/WhyEnterpriseAIStruggles 301
+/pages/GCC/GccBlogs/WhyEnterpriseAIStruggles /gcc/blogs/WhyEnterpriseAIStruggles 301
 
-# GCC Case Studies
-/gcc/case-studies/gen-ai-studio                                     /pages/GCC/GccCaseStudies/GenAIStudio.html                                           200
-/gcc/case-studies/real-time-ai-ops                                  /pages/GCC/GccCaseStudies/RealTimeAIOps.html                                         200
+/pages/GCC/GccCaseStudies/GenAIStudio.html /gcc/case-studies/gen-ai-studio 301
+/pages/GCC/GccCaseStudies/GenAIStudio /gcc/case-studies/gen-ai-studio 301
+/pages/GCC/GccCaseStudies/RealTimeAIOps.html /gcc/case-studies/real-time-ai-ops 301
+/pages/GCC/GccCaseStudies/RealTimeAIOps /gcc/case-studies/real-time-ai-ops 301
 
-# Industries
-/industries/financial-services                                      /pages/Industries/FinancialServices.html                                             200
-/industries/healthcare                                              /pages/Industries/Healthcare.html                                                    200
-/industries/manufacturing                                           /pages/Industries/Manufacturing.html                                                 200
-/industries/media                                                   /pages/Industries/Media.html                                                         200
+/pages/Industries/FinancialServices.html /industries/financial-services 301
+/pages/Industries/FinancialServices /industries/financial-services 301
+/pages/Industries/Healthcare.html /industries/healthcare 301
+/pages/Industries/Healthcare /industries/healthcare 301
+/pages/Industries/Manufacturing.html /industries/manufacturing 301
+/pages/Industries/Manufacturing /industries/manufacturing 301
+/pages/Industries/Media.html /industries/media 301
+/pages/Industries/Media /industries/media 301
 
-# Resources
-/resources/insights                                                 /pages/Resources/Insights.html                                                       200
-/resources/research                                                 /pages/Resources/ResourcesHub.html                                                   200
-/resources/case-studies                                             /pages/Resources/CaseStudy.html                                                      200
-/resources/events                                                   /pages/Resources/Events.html                                                         200
-/resources/news                                                     /pages/Resources/News.html                                                           200
+/pages/Resources/Insights.html /resources/insights 301
+/pages/Resources/Insights /resources/insights 301
+/pages/Resources/ResourcesHub.html /resources/research 301
+/pages/Resources/ResourcesHub /resources/research 301
+/pages/Resources/CaseStudy.html /resources/case-studies 301
+/pages/Resources/CaseStudy /resources/case-studies 301
+/pages/Resources/Events.html /resources/events 301
+/pages/Resources/Events /resources/events 301
+/pages/Resources/News.html /resources/news 301
+/pages/Resources/News /resources/news 301
 
-# Resources Blogs
-/resources/blogs/the-architecture-that-frees-your-data-engineering-team   /pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team.html   200
-/resources/blogs/when-fraud-monitoring-becomes-manual-triage               /pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage.html              200
-/resources/blogs/alert-fatigue-is-a-data-architecture-problem              /pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem.html             200
+/pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team.html /resources/blogs/the-architecture-that-frees-your-data-engineering-team 301
+/pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team /resources/blogs/the-architecture-that-frees-your-data-engineering-team 301
+/pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage.html /resources/blogs/when-fraud-monitoring-becomes-manual-triage 301
+/pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage /resources/blogs/when-fraud-monitoring-becomes-manual-triage 301
+/pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem.html /resources/blogs/alert-fatigue-is-a-data-architecture-problem 301
+/pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem /resources/blogs/alert-fatigue-is-a-data-architecture-problem 301
 
-# Resources Case Studies
-/resources/case-studies/predictive-maintenance                      /pages/Resources/case-studies/predictive-maintenance.html                           200
-/resources/case-studies/stabilizing-global-it-operations            /pages/Resources/case-studies/stabilizing-global-it-operations.html                 200
-/resources/case-studies/unlocking-population-health-insights        /pages/Resources/case-studies/unlocking-population-health-insights.html              200
+/pages/Resources/case-studies/predictive-maintenance.html /resources/case-studies/predictive-maintenance 301
+/pages/Resources/case-studies/predictive-maintenance /resources/case-studies/predictive-maintenance 301
+/pages/Resources/case-studies/stabilizing-global-it-operations.html /resources/case-studies/stabilizing-global-it-operations 301
+/pages/Resources/case-studies/stabilizing-global-it-operations /resources/case-studies/stabilizing-global-it-operations 301
+/pages/Resources/case-studies/unlocking-population-health-insights.html /resources/case-studies/unlocking-population-health-insights 301
+/pages/Resources/case-studies/unlocking-population-health-insights /resources/case-studies/unlocking-population-health-insights 301
 
-# Resources Events
-/resources/events/ta-leadership-retreat                             /pages/Resources/events/ta-leadership-retreat.html                                  200
-/resources/events/microsoft-mumbai-ai-tour-2025                     /pages/Resources/events/microsoft-mumbai-ai-tour-2025.html                          200
-/resources/events/et-gcc-conclave-2025                              /pages/Resources/events/et-gcc-conclave-2025.html                                   200
+/pages/Resources/events/ta-leadership-retreat.html /resources/events/ta-leadership-retreat 301
+/pages/Resources/events/ta-leadership-retreat /resources/events/ta-leadership-retreat 301
+/pages/Resources/events/microsoft-mumbai-ai-tour-2025.html /resources/events/microsoft-mumbai-ai-tour-2025 301
+/pages/Resources/events/microsoft-mumbai-ai-tour-2025 /resources/events/microsoft-mumbai-ai-tour-2025 301
+/pages/Resources/events/et-gcc-conclave-2025.html /resources/events/et-gcc-conclave-2025 301
+/pages/Resources/events/et-gcc-conclave-2025 /resources/events/et-gcc-conclave-2025 301
 
-# Resources Webinars
-/resources/webinars/curateai-demo                                   /pages/Resources/webinars/curateai-demo.html                                        200
-/resources/webinars/building-resilient-cloud-infrastructure-sre     /pages/Resources/webinars/building-resilient-cloud-infrastructure-sre.html          200
-/resources/webinars/end-to-end-api-testing-apac-emea                /pages/Resources/webinars/end-to-end-api-testing-apac-emea.html                     200
+/pages/Resources/webinars/curateai-demo.html /resources/webinars/curateai-demo 301
+/pages/Resources/webinars/curateai-demo /resources/webinars/curateai-demo 301
+/pages/Resources/webinars/building-resilient-cloud-infrastructure-sre.html /resources/webinars/building-resilient-cloud-infrastructure-sre 301
+/pages/Resources/webinars/building-resilient-cloud-infrastructure-sre /resources/webinars/building-resilient-cloud-infrastructure-sre 301
+/pages/Resources/webinars/end-to-end-api-testing-apac-emea.html /resources/webinars/end-to-end-api-testing-apac-emea 301
+/pages/Resources/webinars/end-to-end-api-testing-apac-emea /resources/webinars/end-to-end-api-testing-apac-emea 301
 
-# Resources News
-/resources/news/national-technology-day-2024                        /pages/Resources/news/national-technology-day-2024.html                             200
-/resources/news/revolutionizing-it-vectors-vision                   /pages/Resources/news/revolutionizing-it-vectors-vision.html                        200
-/resources/news/parkar-digital-vector-2-launch                      /pages/Resources/news/parkar-digital-vector-2-launch.html                           200
+/pages/Resources/news/national-technology-day-2024.html /resources/news/national-technology-day-2024 301
+/pages/Resources/news/national-technology-day-2024 /resources/news/national-technology-day-2024 301
+/pages/Resources/news/revolutionizing-it-vectors-vision.html /resources/news/revolutionizing-it-vectors-vision 301
+/pages/Resources/news/revolutionizing-it-vectors-vision /resources/news/revolutionizing-it-vectors-vision 301
+/pages/Resources/news/parkar-digital-vector-2-launch.html /resources/news/parkar-digital-vector-2-launch 301
+/pages/Resources/news/parkar-digital-vector-2-launch /resources/news/parkar-digital-vector-2-launch 301
 
-# Company
-/company/about                                                      /pages/Company/About.html                                                            200
-/company/our-journey                                                /pages/Company/OurJourney.html                                                       200
-/company/awards                                                     /pages/Company/AwardsRecognitions.html                                               200
-/company/partners                                                   /pages/Company/Partners.html                                                         200
-/company/leadership                                                 /pages/Company/Leadership.html                                                       200
+/pages/Company/About.html /company/about 301
+/pages/Company/About /company/about 301
+/pages/Company/OurJourney.html /company/our-journey 301
+/pages/Company/OurJourney /company/our-journey 301
+/pages/Company/AwardsRecognitions.html /company/awards 301
+/pages/Company/AwardsRecognitions /company/awards 301
+/pages/Company/Partners.html /company/partners 301
+/pages/Company/Partners /company/partners 301
+/pages/Company/Leadership.html /company/leadership 301
+/pages/Company/Leadership /company/leadership 301
 
-# Careers
-/careers/life-at-parkar                                             /pages/Careers/LifeAtParkar.html                                                     200
-/careers/open-positions                                             /pages/Careers/OpenPositions.html                                                    200
-/careers/team-highlights                                            /pages/Careers/TeamHighlights.html                                                   200
-/careers/team-highlights/satyen                                     /pages/Careers/TeamHighlights/Satyen.html                                            200
+/pages/Careers/LifeAtParkar.html /careers/life-at-parkar 301
+/pages/Careers/LifeAtParkar /careers/life-at-parkar 301
+/pages/Careers/OpenPositions.html /careers/open-positions 301
+/pages/Careers/OpenPositions /careers/open-positions 301
+/pages/Careers/TeamHighlights.html /careers/team-highlights 301
+/pages/Careers/TeamHighlights /careers/team-highlights 301
+/pages/Careers/TeamHighlights/Satyen.html /careers/team-highlights/satyen 301
+/pages/Careers/TeamHighlights/Satyen /careers/team-highlights/satyen 301
 
-# Legal / Footer
-/legal/privacy                                                      /pages/FooterPages/PrivacyPolicy.html                                               200
-/legal/terms                                                        /pages/FooterPages/TermsOfUse.html                                                  200
+/pages/FooterPages/PrivacyPolicy.html /legal/privacy 301
+/pages/FooterPages/PrivacyPolicy /legal/privacy 301
+/pages/FooterPages/TermsOfUse.html /legal/terms 301
+/pages/FooterPages/TermsOfUse /legal/terms 301
+
+# ─── Clean URL rewrites ───────────────────────────────────────────────────────
+
+/contact /pages/Contact.html 200
+
+/platforms/aioniq /pages/Platforms/AIONIQ.html 200
+/platforms/vector /pages/Vector/Overview.html 200
+/platforms/vector-platform /pages/Vector/Platform.html 200
+/platforms/vector-integrations /pages/Vector/Integration.html 200
+
+/solutions/agentic-ai /pages/Solutions/AgenticAI.html 200
+/solutions/applications /pages/Solutions/Applications.html 200
+/solutions/data /pages/Solutions/Data.html 200
+/solutions/cloud /pages/Solutions/Cloud.html 200
+
+/solutions/case-studies/unlocking-growth-user-adoption /pages/Solutions/case-studies/unlocking-growth-user-adoption.html 200
+/solutions/case-studies/operational-excellence-cloud /pages/Solutions/case-studies/operational-excellence-cloud.html 200
+/solutions/case-studies/cost-efficiency-cloud /pages/Solutions/case-studies/cost-efficiency-cloud.html 200
+/solutions/case-studies/elevating-database-performance /pages/Solutions/case-studies/elevating-database-performance.html 200
+/solutions/case-studies/data-driven-bi /pages/Solutions/case-studies/data-driven-bi.html 200
+/solutions/case-studies/strategic-insight-cloud /pages/Solutions/case-studies/strategic-insight-cloud.html 200
+
+/gcc/overview /pages/GCC/Overview.html 200
+/gcc/managed-service /pages/GCC/ManagedService.html 200
+/gcc/pay-as-you-go /pages/GCC/PayAsYouGo.html 200
+/gcc/build-operate-transfer /pages/GCC/BuildOperateTransfer.html 200
+/gcc/thought-leadership /pages/GCC/ThoughtLeadership.html 200
+
+/gcc/blogs/BuildingForIntelligence /pages/GCC/GccBlogs/BuildingForIntelligence.html 200
+/gcc/blogs/WhyEnterpriseAIStruggles /pages/GCC/GccBlogs/WhyEnterpriseAIStruggles.html 200
+
+/gcc/case-studies/gen-ai-studio /pages/GCC/GccCaseStudies/GenAIStudio.html 200
+/gcc/case-studies/real-time-ai-ops /pages/GCC/GccCaseStudies/RealTimeAIOps.html 200
+
+/industries/financial-services /pages/Industries/FinancialServices.html 200
+/industries/healthcare /pages/Industries/Healthcare.html 200
+/industries/manufacturing /pages/Industries/Manufacturing.html 200
+/industries/media /pages/Industries/Media.html 200
+
+/resources/insights /pages/Resources/Insights.html 200
+/resources/research /pages/Resources/ResourcesHub.html 200
+/resources/case-studies /pages/Resources/CaseStudy.html 200
+/resources/events /pages/Resources/Events.html 200
+/resources/news /pages/Resources/News.html 200
+
+/resources/blogs/the-architecture-that-frees-your-data-engineering-team /pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team.html 200
+/resources/blogs/when-fraud-monitoring-becomes-manual-triage /pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage.html 200
+/resources/blogs/alert-fatigue-is-a-data-architecture-problem /pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem.html 200
+
+/resources/case-studies/predictive-maintenance /pages/Resources/case-studies/predictive-maintenance.html 200
+/resources/case-studies/stabilizing-global-it-operations /pages/Resources/case-studies/stabilizing-global-it-operations.html 200
+/resources/case-studies/unlocking-population-health-insights /pages/Resources/case-studies/unlocking-population-health-insights.html 200
+
+/resources/events/ta-leadership-retreat /pages/Resources/events/ta-leadership-retreat.html 200
+/resources/events/microsoft-mumbai-ai-tour-2025 /pages/Resources/events/microsoft-mumbai-ai-tour-2025.html 200
+/resources/events/et-gcc-conclave-2025 /pages/Resources/events/et-gcc-conclave-2025.html 200
+
+/resources/webinars/curateai-demo /pages/Resources/webinars/curateai-demo.html 200
+/resources/webinars/building-resilient-cloud-infrastructure-sre /pages/Resources/webinars/building-resilient-cloud-infrastructure-sre.html 200
+/resources/webinars/end-to-end-api-testing-apac-emea /pages/Resources/webinars/end-to-end-api-testing-apac-emea.html 200
+
+/resources/news/national-technology-day-2024 /pages/Resources/news/national-technology-day-2024.html 200
+/resources/news/revolutionizing-it-vectors-vision /pages/Resources/news/revolutionizing-it-vectors-vision.html 200
+/resources/news/parkar-digital-vector-2-launch /pages/Resources/news/parkar-digital-vector-2-launch.html 200
+
+/company/about /pages/Company/About.html 200
+/company/our-journey /pages/Company/OurJourney.html 200
+/company/awards /pages/Company/AwardsRecognitions.html 200
+/company/partners /pages/Company/Partners.html 200
+/company/leadership /pages/Company/Leadership.html 200
+
+/careers/life-at-parkar /pages/Careers/LifeAtParkar.html 200
+/careers/open-positions /pages/Careers/OpenPositions.html 200
+/careers/team-highlights /pages/Careers/TeamHighlights.html 200
+/careers/team-highlights/satyen /pages/Careers/TeamHighlights/Satyen.html 200
+
+/legal/privacy /pages/FooterPages/PrivacyPolicy.html 200
+/legal/terms /pages/FooterPages/TermsOfUse.html 200
