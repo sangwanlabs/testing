@@ -49,6 +49,35 @@
     '/careers/open-positions':              'pages/Careers/OpenPositions.html',
     '/careers/team-highlights':             'pages/Careers/TeamHighlights.html',
     '/contact':                             'pages/Contact.html',
+    '/careers/team-highlights/satyen':             'pages/Careers/TeamHighlights/Satyen.html',
+    // GCC articles
+    '/gcc/blogs/BuildingForIntelligence':           'pages/GCC/GccBlogs/BuildingForIntelligence.html',
+    '/gcc/blogs/WhyEnterpriseAIStruggles':          'pages/GCC/GccBlogs/WhyEnterpriseAIStruggles.html',
+    '/gcc/case-studies/gen-ai-studio':              'pages/GCC/GccCaseStudies/GenAIStudio.html',
+    '/gcc/case-studies/real-time-ai-ops':           'pages/GCC/GccCaseStudies/RealTimeAIOps.html',
+    // Resources articles
+    '/resources/blogs/the-architecture-that-frees-your-data-engineering-team': 'pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team.html',
+    '/resources/blogs/when-fraud-monitoring-becomes-manual-triage':            'pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage.html',
+    '/resources/blogs/alert-fatigue-is-a-data-architecture-problem':          'pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem.html',
+    '/resources/case-studies/predictive-maintenance':                 'pages/Resources/case-studies/predictive-maintenance.html',
+    '/resources/case-studies/stabilizing-global-it-operations':       'pages/Resources/case-studies/stabilizing-global-it-operations.html',
+    '/resources/case-studies/unlocking-population-health-insights':   'pages/Resources/case-studies/unlocking-population-health-insights.html',
+    '/resources/events/ta-leadership-retreat':                        'pages/Resources/events/ta-leadership-retreat.html',
+    '/resources/events/microsoft-mumbai-ai-tour-2025':                'pages/Resources/events/microsoft-mumbai-ai-tour-2025.html',
+    '/resources/events/et-gcc-conclave-2025':                         'pages/Resources/events/et-gcc-conclave-2025.html',
+    '/resources/webinars/curateai-demo':                              'pages/Resources/webinars/curateai-demo.html',
+    '/resources/webinars/building-resilient-cloud-infrastructure-sre':'pages/Resources/webinars/building-resilient-cloud-infrastructure-sre.html',
+    '/resources/webinars/end-to-end-api-testing-apac-emea':           'pages/Resources/webinars/end-to-end-api-testing-apac-emea.html',
+    '/resources/news/national-technology-day-2024':                   'pages/Resources/news/national-technology-day-2024.html',
+    '/resources/news/revolutionizing-it-vectors-vision':              'pages/Resources/news/revolutionizing-it-vectors-vision.html',
+    '/resources/news/parkar-digital-vector-2-launch':                 'pages/Resources/news/parkar-digital-vector-2-launch.html',
+    // Solutions case studies
+    '/solutions/case-studies/unlocking-growth-user-adoption':   'pages/Solutions/case-studies/unlocking-growth-user-adoption.html',
+    '/solutions/case-studies/operational-excellence-cloud':     'pages/Solutions/case-studies/operational-excellence-cloud.html',
+    '/solutions/case-studies/cost-efficiency-cloud':            'pages/Solutions/case-studies/cost-efficiency-cloud.html',
+    '/solutions/case-studies/elevating-database-performance':   'pages/Solutions/case-studies/elevating-database-performance.html',
+    '/solutions/case-studies/data-driven-bi':                   'pages/Solutions/case-studies/data-driven-bi.html',
+    '/solutions/case-studies/strategic-insight-cloud':          'pages/Solutions/case-studies/strategic-insight-cloud.html',
   };
 
   /* ── Detect environment ──────────────────────────────────────────────────── */
