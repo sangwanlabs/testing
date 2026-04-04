@@ -1,0 +1,95 @@
+# ─── Cloudflare Pages URL Rewrites ───────────────────────────────────────────
+# Maps clean URLs → actual HTML files (200 = serve file, keep URL unchanged)
+
+# Core pages
+/contact                                                            /pages/Contact.html                                                                  200
+
+# Platforms
+/platforms/aioniq                                                   /pages/Platforms/AIONIQ.html                                                         200
+/platforms/vector                                                   /pages/Vector/Overview.html                                                          200
+/platforms/vector-platform                                          /pages/Vector/Platform.html                                                          200
+/platforms/vector-integrations                                      /pages/Vector/Integration.html                                                       200
+
+# Solutions
+/solutions/agentic-ai                                               /pages/Solutions/AgenticAI.html                                                      200
+/solutions/applications                                             /pages/Solutions/Applications.html                                                   200
+/solutions/data                                                     /pages/Solutions/Data.html                                                           200
+/solutions/cloud                                                    /pages/Solutions/Cloud.html                                                          200
+
+# Solutions Case Studies
+/solutions/case-studies/unlocking-growth-user-adoption             /pages/Solutions/case-studies/unlocking-growth-user-adoption.html                    200
+/solutions/case-studies/operational-excellence-cloud               /pages/Solutions/case-studies/operational-excellence-cloud.html                      200
+/solutions/case-studies/cost-efficiency-cloud                      /pages/Solutions/case-studies/cost-efficiency-cloud.html                             200
+/solutions/case-studies/elevating-database-performance             /pages/Solutions/case-studies/elevating-database-performance.html                    200
+/solutions/case-studies/data-driven-bi                             /pages/Solutions/case-studies/data-driven-bi.html                                    200
+/solutions/case-studies/strategic-insight-cloud                    /pages/Solutions/case-studies/strategic-insight-cloud.html                           200
+
+# GCC
+/gcc/overview                                                       /pages/GCC/Overview.html                                                             200
+/gcc/managed-service                                                /pages/GCC/ManagedService.html                                                       200
+/gcc/pay-as-you-go                                                  /pages/GCC/PayAsYouGo.html                                                           200
+/gcc/build-operate-transfer                                         /pages/GCC/BuildOperateTransfer.html                                                 200
+/gcc/thought-leadership                                             /pages/GCC/ThoughtLeadership.html                                                    200
+
+# GCC Blogs
+/gcc/blogs/BuildingForIntelligence                                  /pages/GCC/GccBlogs/BuildingForIntelligence.html                                     200
+/gcc/blogs/WhyEnterpriseAIStruggles                                 /pages/GCC/GccBlogs/WhyEnterpriseAIStruggles.html                                    200
+
+# GCC Case Studies
+/gcc/case-studies/gen-ai-studio                                     /pages/GCC/GccCaseStudies/GenAIStudio.html                                           200
+/gcc/case-studies/real-time-ai-ops                                  /pages/GCC/GccCaseStudies/RealTimeAIOps.html                                         200
+
+# Industries
+/industries/financial-services                                      /pages/Industries/FinancialServices.html                                             200
+/industries/healthcare                                              /pages/Industries/Healthcare.html                                                    200
+/industries/manufacturing                                           /pages/Industries/Manufacturing.html                                                 200
+/industries/media                                                   /pages/Industries/Media.html                                                         200
+
+# Resources
+/resources/insights                                                 /pages/Resources/Insights.html                                                       200
+/resources/research                                                 /pages/Resources/ResourcesHub.html                                                   200
+/resources/case-studies                                             /pages/Resources/CaseStudy.html                                                      200
+/resources/events                                                   /pages/Resources/Events.html                                                         200
+/resources/news                                                     /pages/Resources/News.html                                                           200
+
+# Resources Blogs
+/resources/blogs/the-architecture-that-frees-your-data-engineering-team   /pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team.html   200
+/resources/blogs/when-fraud-monitoring-becomes-manual-triage               /pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage.html              200
+/resources/blogs/alert-fatigue-is-a-data-architecture-problem              /pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem.html             200
+
+# Resources Case Studies
+/resources/case-studies/predictive-maintenance                      /pages/Resources/case-studies/predictive-maintenance.html                           200
+/resources/case-studies/stabilizing-global-it-operations            /pages/Resources/case-studies/stabilizing-global-it-operations.html                 200
+/resources/case-studies/unlocking-population-health-insights        /pages/Resources/case-studies/unlocking-population-health-insights.html              200
+
+# Resources Events
+/resources/events/ta-leadership-retreat                             /pages/Resources/events/ta-leadership-retreat.html                                  200
+/resources/events/microsoft-mumbai-ai-tour-2025                     /pages/Resources/events/microsoft-mumbai-ai-tour-2025.html                          200
+/resources/events/et-gcc-conclave-2025                              /pages/Resources/events/et-gcc-conclave-2025.html                                   200
+
+# Resources Webinars
+/resources/webinars/curateai-demo                                   /pages/Resources/webinars/curateai-demo.html                                        200
+/resources/webinars/building-resilient-cloud-infrastructure-sre     /pages/Resources/webinars/building-resilient-cloud-infrastructure-sre.html          200
+/resources/webinars/end-to-end-api-testing-apac-emea                /pages/Resources/webinars/end-to-end-api-testing-apac-emea.html                     200
+
+# Resources News
+/resources/news/national-technology-day-2024                        /pages/Resources/news/national-technology-day-2024.html                             200
+/resources/news/revolutionizing-it-vectors-vision                   /pages/Resources/news/revolutionizing-it-vectors-vision.html                        200
+/resources/news/parkar-digital-vector-2-launch                      /pages/Resources/news/parkar-digital-vector-2-launch.html                           200
+
+# Company
+/company/about                                                      /pages/Company/About.html                                                            200
+/company/our-journey                                                /pages/Company/OurJourney.html                                                       200
+/company/awards                                                     /pages/Company/AwardsRecognitions.html                                               200
+/company/partners                                                   /pages/Company/Partners.html                                                         200
+/company/leadership                                                 /pages/Company/Leadership.html                                                       200
+
+# Careers
+/careers/life-at-parkar                                             /pages/Careers/LifeAtParkar.html                                                     200
+/careers/open-positions                                             /pages/Careers/OpenPositions.html                                                    200
+/careers/team-highlights                                            /pages/Careers/TeamHighlights.html                                                   200
+/careers/team-highlights/satyen                                     /pages/Careers/TeamHighlights/Satyen.html                                            200
+
+# Legal / Footer
+/legal/privacy                                                      /pages/FooterPages/PrivacyPolicy.html                                               200
+/legal/terms                                                        /pages/FooterPages/TermsOfUse.html                                                  200
