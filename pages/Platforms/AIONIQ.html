@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIONIQ – The Enterprise Operating Model for Agentic AI | Parkar</title>
+  <meta name="description" content="AIONIQ is Parkar's enterprise operating model for Agentic AI — built for speed, security, and scale. From AI pilots to production systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Site-wide styles -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="../../css/aioniq.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+<body class="page-aioniq">
+
+  <!-- ─── NAVBAR (Component) ─── -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ─── HERO ─── -->
+  <section class="aiq-hero" id="aiq-hero">
+    <div class="aiq-hero-bg">
+      <canvas id="aiq-neural-network"></canvas>
+    </div>
+    <div class="aiq-hero-content">
+      <div class="aiq-hero-badge fade-in">Enterprise-Grade Agentic AI</div>
+      <h1 class="aiq-hero-title fade-in">
+        The Enterprise Operating Model for
+        <span class="aiq-gradient-text">Agentic AI</span>
+      </h1>
+      <p class="aiq-hero-subtitle fade-in">Built for Speed, Security &amp; Scale</p>
+      <div class="aiq-hero-cta fade-in">
+        <button class="aiq-btn aiq-btn-primary">Book Demo</button>
+      </div>
+    </div>
+    <div class="aiq-scroll-indicator">
+      <div class="aiq-mouse"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ─── PROBLEM SECTION ─── -->
+  <section class="aiq-problem-section" id="aiq-problems">
+    <div class="container">
+      <div class="aiq-section-header">
+        <span class="aiq-label">The Challenge</span>
+        <h2 class="aiq-title">The Enterprise AI Problem</h2>
+        <p class="aiq-subtitle">Organizations struggle to move from AI pilots to production systems</p>
+      </div>
+      <div class="aiq-problem-grid">
+        <div class="aiq-problem-card" data-card="1">
+          <div class="aiq-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+            </svg>
+          </div>
+          <h3>Prioritisation Gap</h3>
+          <p>500+ use cases, no framework to evaluate ROI, feasibility, or strategic fit</p>
+          <div class="aiq-card-glow"></div>
+        </div>
+        <div class="aiq-problem-card" data-card="2">
+          <div class="aiq-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </div>
+          <h3>Readiness Gap</h3>
+          <p>Data quality, security, and integration readiness unknown until mid-build</p>
+          <div class="aiq-card-glow"></div>
+        </div>
+        <div class="aiq-problem-card" data-card="3">
+          <div class="aiq-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3>Production Gap</h3>
+          <p>Pilots succeed, but lack governance, audit trails, and enterprise controls</p>
+          <div class="aiq-card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FRAMEWORK SECTION ─── -->
+  <section class="aiq-framework-section" id="aiq-platform">
+    <div class="container">
+      <div class="aiq-section-header">
+        <span class="aiq-label">Our Approach</span>
+        <h2 class="aiq-title">Three-Phase Framework</h2>
+        <p class="aiq-subtitle">From ideation to production-ready AI agents</p>
+      </div>
+      <div class="aiq-framework-timeline">
+        <div class="aiq-timeline-track"></div>
+
+        <!-- Phase 1: IDENTIFY -->
+        <div class="aiq-framework-phase active" data-phase="1">
+          <div class="aiq-phase-number">01</div>
+          <div class="aiq-phase-content">
+            <h3>IDENTIFY</h3>
+            <ul>
+              <li>Use case scoring engine</li>
+              <li>ROI modeling &amp; feasibility analysis</li>
+              <li>Strategic alignment mapping</li>
+            </ul>
+            <div class="aiq-phase-output">
+              <span class="aiq-output-label">Output</span>
+              <span class="aiq-output-value">Wave 1/2/3 Backlog</span>
+            </div>
+          </div>
+          <div class="aiq-phase-visual">
+            <div class="aiq-identify-visual">
+              <div class="aiq-search-radar"></div>
+              <div class="aiq-data-points">
+                <div class="aiq-data-point" style="top:20%;left:30%;"></div>
+                <div class="aiq-data-point" style="top:50%;left:60%;"></div>
+                <div class="aiq-data-point" style="top:70%;left:20%;"></div>
+                <div class="aiq-data-point" style="top:30%;left:80%;"></div>
+                <div class="aiq-data-point highlight" style="top:45%;left:45%;"></div>
+              </div>
+              <div class="aiq-scan-line"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2: ASSESS -->
+        <div class="aiq-framework-phase" data-phase="2">
+          <div class="aiq-phase-number">02</div>
+          <div class="aiq-phase-content">
+            <h3>ASSESS</h3>
+            <ul>
+              <li>10-dimension readiness diagnostic</li>
+              <li>Data quality profiling</li>
+              <li>Integration &amp; security mapping</li>
+            </ul>
+            <div class="aiq-phase-output">
+              <span class="aiq-output-label">Output</span>
+              <span class="aiq-output-value">Readiness Scorecard</span>
+            </div>
+          </div>
+          <div class="aiq-phase-visual">
+            <div class="aiq-assess-visual">
+              <div class="aiq-gauge-container">
+                <svg viewBox="0 0 200 120" class="aiq-gauge-svg">
+                  <defs>
+                    <linearGradient id="aiqGaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#00D9FF"/>
+                      <stop offset="100%" style="stop-color:#7B61FF"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12" stroke-linecap="round"/>
+                  <path class="aiq-gauge-progress" d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#aiqGaugeGradient)" stroke-width="12" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="75"/>
+                </svg>
+                <div class="aiq-gauge-value">75%</div>
+                <div class="aiq-gauge-label">Readiness</div>
+              </div>
+              <div class="aiq-check-marks">
+                <div class="aiq-check-item"><span class="aiq-check-icon">✓</span> Data Quality</div>
+                <div class="aiq-check-item"><span class="aiq-check-icon">✓</span> Security</div>
+                <div class="aiq-check-item"><span class="aiq-check-icon">✓</span> Integration</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3: BUILD & GOVERN -->
+        <div class="aiq-framework-phase" data-phase="3">
+          <div class="aiq-phase-number">03</div>
+          <div class="aiq-phase-content">
+            <h3>BUILD &amp; GOVERN</h3>
+            <ul>
+              <li>Agent builder (LangGraph, CrewAI)</li>
+              <li>Governance layer (RBAC, audit logs)</li>
+              <li>Human-in-the-loop workflows</li>
+            </ul>
+            <div class="aiq-phase-output">
+              <span class="aiq-output-label">Output</span>
+              <span class="aiq-output-value">Production System</span>
+            </div>
+          </div>
+          <div class="aiq-phase-visual">
+            <div class="aiq-build-visual">
+              <div class="aiq-construction-layers">
+                <div class="aiq-layer-bar" style="width:100%;animation-delay:0s;"></div>
+                <div class="aiq-layer-bar" style="width:80%;animation-delay:0.3s;"></div>
+                <div class="aiq-layer-bar" style="width:60%;animation-delay:0.6s;"></div>
+                <div class="aiq-layer-bar" style="width:40%;animation-delay:0.9s;"></div>
+              </div>
+              <div class="aiq-shield-overlay">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="aiq-build-particles">
+                <div class="aiq-particle"></div>
+                <div class="aiq-particle"></div>
+                <div class="aiq-particle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES SECTION ─── -->
+  <section class="aiq-features-section" id="aiq-features">
+    <div class="container">
+      <div class="aiq-section-header">
+        <span class="aiq-label">Capabilities</span>
+        <h2 class="aiq-title">Platform Features</h2>
+      </div>
+      <div class="aiq-features-grid">
+        <div class="aiq-feature-card large">
+          <div class="aiq-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M9 3v18M3 9h18M3 15h18"/>
+            </svg>
+          </div>
+          <h3>Agent Builder</h3>
+          <p>Visual orchestration for LangGraph, CrewAI, and custom frameworks</p>
+          <div class="aiq-feature-tags">
+            <span>Multi-Agent</span>
+            <span>No-Code</span>
+            <span>Extensible</span>
+          </div>
+        </div>
+        <div class="aiq-feature-card">
+          <div class="aiq-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+            </svg>
+          </div>
+          <h3>Data Layer Accelerators</h3>
+          <p>Pre-built connectors, quality profiling, and semantic layer</p>
+        </div>
+        <div class="aiq-feature-card">
+          <div class="aiq-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3>Governance Engine</h3>
+          <p>RBAC, audit logs, compliance tracking, and approval workflows</p>
+        </div>
+        <div class="aiq-feature-card large">
+          <div class="aiq-feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3>MCP Gateway</h3>
+          <p>Unified access to 1,000+ Model Context Protocol servers</p>
+          <div class="aiq-feature-tags">
+            <span>1.8M calls/day</span>
+            <span>Enterprise-ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── AI READINESS SCORECARD ─── -->
+  <section class="aiq-scorecard-section" id="aiq-scorecard">
+    <div class="container">
+      <div class="aiq-section-header">
+        <span class="aiq-label">Assessment</span>
+        <h2 class="aiq-title">AI Readiness Scorecard</h2>
+        <p class="aiq-subtitle">10-dimension diagnostic across your enterprise</p>
+      </div>
+      <div class="aiq-scorecard-content">
+        <div class="aiq-scorecard-visual">
+          <div class="aiq-radar-chart">
+            <svg viewBox="0 0 400 400" class="aiq-radar-svg">
+              <defs>
+                <linearGradient id="aiqRadarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.3"/>
+                  <stop offset="100%" style="stop-color:#7B61FF;stop-opacity:0.1"/>
+                </linearGradient>
+              </defs>
+              <circle cx="200" cy="200" r="160" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="80"  fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="40"  fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="200" y2="40"  stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="330" y2="90"  stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="360" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="330" y2="310" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="200" y2="360" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="70"  y2="310" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="40"  y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="200" y1="200" x2="70"  y2="90"  stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <polygon points="200,80 290,110 330,200 290,270 200,300 120,270 80,200 120,110"
+                       fill="url(#aiqRadarGradient)" stroke="#00D9FF" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="aiq-scorecard-dimensions">
+          <div class="aiq-dimension strong">
+            <div class="aiq-dimension-header">
+              <span class="aiq-dimension-name">Data Architecture</span>
+              <span class="aiq-dimension-score">92%</span>
+            </div>
+            <div class="aiq-dimension-bar"><div class="aiq-bar-fill" style="width:92%"></div></div>
+            <span class="aiq-dimension-status">Strong</span>
+          </div>
+          <div class="aiq-dimension strong">
+            <div class="aiq-dimension-header">
+              <span class="aiq-dimension-name">Security &amp; Compliance</span>
+              <span class="aiq-dimension-score">88%</span>
+            </div>
+            <div class="aiq-dimension-bar"><div class="aiq-bar-fill" style="width:88%"></div></div>
+            <span class="aiq-dimension-status">Strong</span>
+          </div>
+          <div class="aiq-dimension emerging">
+            <div class="aiq-dimension-header">
+              <span class="aiq-dimension-name">ML/AI Maturity</span>
+              <span class="aiq-dimension-score">72%</span>
+            </div>
+            <div class="aiq-dimension-bar"><div class="aiq-bar-fill" style="width:72%"></div></div>
+            <span class="aiq-dimension-status">Emerging</span>
+          </div>
+          <div class="aiq-dimension emerging">
+            <div class="aiq-dimension-header">
+              <span class="aiq-dimension-name">Integration Readiness</span>
+              <span class="aiq-dimension-score">68%</span>
+            </div>
+            <div class="aiq-dimension-bar"><div class="aiq-bar-fill" style="width:68%"></div></div>
+            <span class="aiq-dimension-status">Emerging</span>
+          </div>
+          <div class="aiq-dimension needs">
+            <div class="aiq-dimension-header">
+              <span class="aiq-dimension-name">Change Management</span>
+              <span class="aiq-dimension-score">45%</span>
+            </div>
+            <div class="aiq-dimension-bar"><div class="aiq-bar-fill" style="width:45%"></div></div>
+            <span class="aiq-dimension-status">Needs Strengthening</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ARCHITECTURE SECTION ─── -->
+  <section class="aiq-architecture-section" id="aiq-architecture">
+    <div class="container">
+      <div class="aiq-section-header">
+        <span class="aiq-label">System Design</span>
+        <h2 class="aiq-title">Platform Architecture</h2>
+        <p class="aiq-subtitle">Layered, secure, and enterprise-grade</p>
+      </div>
+      <div class="aiq-architecture-diagram">
+        <div class="aiq-arch-layer" data-layer="4">
+          <div class="aiq-layer-number">04</div>
+          <div class="aiq-layer-content">
+            <h3>Applications</h3>
+            <div class="aiq-layer-items">
+              <span>Web UI</span>
+              <span>API</span>
+              <span>Mobile</span>
+              <span>Slack/Teams</span>
+            </div>
+          </div>
+        </div>
+        <div class="aiq-arch-layer" data-layer="3">
+          <div class="aiq-layer-number">03</div>
+          <div class="aiq-layer-content">
+            <h3>MCP Gateway</h3>
+            <div class="aiq-layer-items">
+              <span>Protocol Adapters</span>
+              <span>Rate Limiting</span>
+              <span>Caching</span>
+            </div>
+          </div>
+        </div>
+        <div class="aiq-arch-layer" data-layer="2">
+          <div class="aiq-layer-number">02</div>
+          <div class="aiq-layer-content">
+            <h3>Agent Orchestration</h3>
+            <div class="aiq-layer-items">
+              <span>LangGraph</span>
+              <span>CrewAI</span>
+              <span>Custom Agents</span>
+            </div>
+          </div>
+        </div>
+        <div class="aiq-arch-layer" data-layer="1">
+          <div class="aiq-layer-number">01</div>
+          <div class="aiq-layer-content">
+            <h3>Data Foundation</h3>
+            <div class="aiq-layer-items">
+              <span>Vector DB</span>
+              <span>SQL/NoSQL</span>
+              <span>Data Lake</span>
+            </div>
+          </div>
+        </div>
+        <div class="aiq-governance-overlay">
+          <div class="aiq-overlay-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <span>Governance &amp; Compliance Layer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FINAL CTA ─── -->
+  <section class="aiq-final-cta">
+    <div class="container">
+      <div class="aiq-cta-content">
+        <h2>From AI Experiments to Production Systems</h2>
+        <p>Join enterprise teams building the future of agentic AI</p>
+        <button class="aiq-btn aiq-btn-primary large">Book Your Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER (Component) ─── -->
+  <div id="footer-placeholder"></div>
+
+  <!-- ─── COMPONENT SCRIPTS ─── -->
+  <script src="../../js/components.js"></script>
+  <script src="../../js/navbar.js"></script>
+  <!-- ─── PAGE SCRIPT ─── -->
+  <script src="../../js/page-aioniq.js"></script>
+
+</body>
+</html>

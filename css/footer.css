@@ -1,0 +1,269 @@
+/* =============================================
+   PARKAR.IN - Footer Styles
+   css/footer.css
+   ============================================= */
+
+.footer {
+  background: #040404;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: var(--space-20) 0 0;
+}
+
+/* --- Footer Top --- */
+.footer-top {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-16);
+  padding-bottom: var(--space-16);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-brand .navbar-logo-text {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-4);
+  display: block;
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.7;
+  max-width: 280px;
+  margin-bottom: var(--space-6);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+.social-link:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.15);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* --- Footer Links Grid --- */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+}
+
+.footer-col-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: var(--space-4);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer-nav a {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.5;
+}
+
+.footer-nav a:hover {
+  color: var(--color-white);
+}
+
+/* --- Footer Bottom --- */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6) 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 0;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.footer-copyright {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.35);
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.footer-bottom-links a {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: rgba(255,255,255,0.65);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--space-16) 0 0;
+  }
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-5);
+  }
+}
+
+/* --- Footer Logo Image --- */
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: var(--space-5);
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* --- Footer Address --- */
+.footer-address {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* 8-column footer links: 4 per row on desktop */
+.footer-links {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1280px) {
+  .footer-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* --- Great Place to Work Badge --- */
+.footer-gptw {
+  margin-top: var(--space-6);
+}
+
+.footer-gptw-link {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+  opacity: 0.92;
+}
+
+.footer-gptw-link:hover {
+  transform: translateY(-3px) scale(1.04);
+  opacity: 1;
+}
+
+.footer-gptw-img {
+  display: block;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+}
+
+/* CSS fallback badge — shown when image fails to load */
+.footer-gptw-fallback {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: #B01C2E;
+  border-radius: 10px;
+  padding: 10px 8px;
+  gap: 3px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+
+.footer-gptw-fallback .footer-gptw-img {
+  display: none;
+}
+
+.footer-gptw-fallback::before {
+  content: 'CERTIFIED';
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.footer-gptw-fallback::after {
+  content: 'Great Place To Work® India';
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.3;
+  margin-top: 2px;
+}
