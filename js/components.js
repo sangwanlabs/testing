@@ -92,14 +92,16 @@
     ? _scriptSrc.replace(/js\/components\.js(\?.*)?$/, '')
     : '';
 
-  // Environments that do NOT have server-side URL rewriting.
+    // Environments that do NOT have server-side URL rewriting.
   // On these, clean URLs (/contact etc.) must be remapped to real file paths.
+  // Cloudflare Workers/Pages HAVE server-side routing, so exclude them.
   const _needsFileRemap =
-    window.location.protocol === 'file:' ||             // opened as file
-    window.location.hostname === '127.0.0.1' ||         // Live Server
-    window.location.hostname === 'localhost' ||          // any local server
-    window.location.hostname.endsWith('.github.io');     // GitHub Pages
-
+    (window.location.protocol === 'file:' ||             // opened as file
+     window.location.hostname === '127.0.0.1' ||         // Live Server
+     window.location.hostname === 'localhost' ||          // any local server
+     window.location.hostname.endsWith('.github.io')) &&  // GitHub Pages
+    !window.location.hostname.endsWith('.workers.dev') && // Cloudflare Workers
+    !window.location.hostname.endsWith('.pages.dev');     // Cloudflare Pages
   /* ── Page depth relative to project root ────────────────────────────────── */
   // Always uses _rootUrl when available so the repo-name prefix on GitHub Pages
   // (e.g. /parkar-main-website/) is correctly stripped before counting slashes.
