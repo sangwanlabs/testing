@@ -1,6 +1,65 @@
-# Cloudflare Pages - clean URL rewrites
-# 200 = serve file, keep clean URL in browser
+# Cloudflare Pages - Redirect /pages/* to clean URLs (301 permanent redirect)
+/pages/Contact /contact 301
+/pages/Platforms/AIONIQ /platforms/aioniq 301
+/pages/Vector/Overview /platforms/vector 301
+/pages/Vector/Platform /platforms/vector-platform 301
+/pages/Vector/Integration /platforms/vector-integrations 301
+/pages/Solutions/AgenticAI /solutions/agentic-ai 301
+/pages/Solutions/Applications /solutions/applications 301
+/pages/Solutions/Data /solutions/data 301
+/pages/Solutions/Cloud /solutions/cloud 301
+/pages/Solutions/case-studies/unlocking-growth-user-adoption /solutions/case-studies/unlocking-growth-user-adoption 301
+/pages/Solutions/case-studies/operational-excellence-cloud /solutions/case-studies/operational-excellence-cloud 301
+/pages/Solutions/case-studies/cost-efficiency-cloud /solutions/case-studies/cost-efficiency-cloud 301
+/pages/Solutions/case-studies/elevating-database-performance /solutions/case-studies/elevating-database-performance 301
+/pages/Solutions/case-studies/data-driven-bi /solutions/case-studies/data-driven-bi 301
+/pages/Solutions/case-studies/strategic-insight-cloud /solutions/case-studies/strategic-insight-cloud 301
+/pages/GCC/Overview /gcc/overview 301
+/pages/GCC/ManagedService /gcc/managed-service 301
+/pages/GCC/PayAsYouGo /gcc/pay-as-you-go 301
+/pages/GCC/BuildOperateTransfer /gcc/build-operate-transfer 301
+/pages/GCC/ThoughtLeadership /gcc/thought-leadership 301
+/pages/GCC/GccBlogs/BuildingForIntelligence /gcc/blogs/BuildingForIntelligence 301
+/pages/GCC/GccBlogs/WhyEnterpriseAIStruggles /gcc/blogs/WhyEnterpriseAIStruggles 301
+/pages/GCC/GccCaseStudies/GenAIStudio /gcc/case-studies/gen-ai-studio 301
+/pages/GCC/GccCaseStudies/RealTimeAIOps /gcc/case-studies/real-time-ai-ops 301
+/pages/Industries/FinancialServices /industries/financial-services 301
+/pages/Industries/Healthcare /industries/healthcare 301
+/pages/Industries/Manufacturing /industries/manufacturing 301
+/pages/Industries/Media /industries/media 301
+/pages/Resources/Insights /resources/insights 301
+/pages/Resources/ResourcesHub /resources/research 301
+/pages/Resources/CaseStudy /resources/case-studies 301
+/pages/Resources/Events /resources/events 301
+/pages/Resources/News /resources/news 301
+/pages/Resources/blogs/the-architecture-that-frees-your-data-engineering-team /resources/blogs/the-architecture-that-frees-your-data-engineering-team 301
+/pages/Resources/blogs/when-fraud-monitoring-becomes-manual-triage /resources/blogs/when-fraud-monitoring-becomes-manual-triage 301
+/pages/Resources/blogs/alert-fatigue-is-a-data-architecture-problem /resources/blogs/alert-fatigue-is-a-data-architecture-problem 301
+/pages/Resources/case-studies/predictive-maintenance /resources/case-studies/predictive-maintenance 301
+/pages/Resources/case-studies/stabilizing-global-it-operations /resources/case-studies/stabilizing-global-it-operations 301
+/pages/Resources/case-studies/unlocking-population-health-insights /resources/case-studies/unlocking-population-health-insights 301
+/pages/Resources/events/ta-leadership-retreat /resources/events/ta-leadership-retreat 301
+/pages/Resources/events/microsoft-mumbai-ai-tour-2025 /resources/events/microsoft-mumbai-ai-tour-2025 301
+/pages/Resources/events/et-gcc-conclave-2025 /resources/events/et-gcc-conclave-2025 301
+/pages/Resources/webinars/curateai-demo /resources/webinars/curateai-demo 301
+/pages/Resources/webinars/building-resilient-cloud-infrastructure-sre /resources/webinars/building-resilient-cloud-infrastructure-sre 301
+/pages/Resources/webinars/end-to-end-api-testing-apac-emea /resources/webinars/end-to-end-api-testing-apac-emea 301
+/pages/Resources/news/national-technology-day-2024 /resources/news/national-technology-day-2024 301
+/pages/Resources/news/revolutionizing-it-vectors-vision /resources/news/revolutionizing-it-vectors-vision 301
+/pages/Resources/news/parkar-digital-vector-2-launch /resources/news/parkar-digital-vector-2-launch 301
+/pages/Company/About /company/about 301
+/pages/Company/OurJourney /company/our-journey 301
+/pages/Company/AwardsRecognitions /company/awards 301
+/pages/Company/Partners /company/partners 301
+/pages/Company/Leadership /company/leadership 301
+/pages/Careers/LifeAtParkar /careers/life-at-parkar 301
+/pages/Careers/OpenPositions /careers/open-positions 301
+/pages/Careers/TeamHighlights /careers/team-highlights 301
+/pages/Careers/TeamHighlights/Satyen /careers/team-highlights/satyen 301
+/pages/FooterPages/PrivacyPolicy /legal/privacy 301
+/pages/FooterPages/TermsOfUse /legal/terms 301
 
+# Clean URL rewrites (200 = serve file, keep clean URL in browser)
 /contact /pages/Contact.html 200
 
 /platforms/aioniq /pages/Platforms/AIONIQ.html 200
