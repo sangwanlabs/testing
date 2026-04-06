@@ -80,6 +80,16 @@
     '/solutions/case-studies/strategic-insight-cloud':          'pages/Solutions/case-studies/strategic-insight-cloud.html',
   };
 
+  /* ── Reverse map: file path → clean URL ────────────────────────────────── */
+  const FILE_TO_CLEAN_URL = Object.entries(ROUTES).reduce((map, [cleanUrl, filePath]) => {
+    const normalizedFilePath = filePath.startsWith('/') ? filePath : `/${filePath}`;
+    const pathWithoutExt = normalizedFilePath.replace(/\.html$/, '');
+
+    map[normalizedFilePath] = cleanUrl;
+    map[pathWithoutExt] = cleanUrl;
+    return map;
+  }, {});
+
   /* ── Detect environment ──────────────────────────────────────────────────── */
   const _scriptSrc = (document.currentScript || {}).src || '';
 
@@ -165,6 +175,24 @@
     return depth > 0 ? '../'.repeat(depth) : '';
   }
 
+  /* ── Normalize direct file-path visits to clean URLs ───────────────────── */
+  // Some deployments can serve /pages/... assets without applying server-side
+  // redirects. When that happens, keep the current document but swap the
+  // address bar to the canonical clean path.
+  function normalizeCurrentUrl() {
+    if (_needsFileRemap) return;
+
+    const currentPath = window.location.pathname;
+    const cleanUrl =
+      FILE_TO_CLEAN_URL[currentPath] ||
+      FILE_TO_CLEAN_URL[currentPath.replace(/\.html$/, '')];
+
+    if (cleanUrl && cleanUrl !== currentPath) {
+      const nextUrl = `${cleanUrl}${window.location.search}${window.location.hash}`;
+      window.history.replaceState(window.history.state, '', nextUrl);
+    }
+  }
+
   /* ── Fetch & inject a component partial ─────────────────────────────────── */
   async function loadComponent(targetId, componentPath) {
     const target = document.getElementById(targetId);
@@ -224,6 +252,8 @@
   }
 
   /* ── Boot ────────────────────────────────────────────────────────────────── */
+  normalizeCurrentUrl();
+
   document.addEventListener('DOMContentLoaded', async () => {
     rewritePageLinks(); // local dev + GitHub Pages only
 
